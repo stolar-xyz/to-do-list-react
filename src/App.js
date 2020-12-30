@@ -1,4 +1,11 @@
 
+const tasks = [
+  { id: 1, content: "test1", done: true },
+  { id: 2, content: "test2", done: false },
+];
+
+const hideDoneTasks = false;
+
 function App() {
   return (
     <main classNameName="container">
@@ -10,20 +17,20 @@ function App() {
         <div className="section__body">
           <form className="form">
             <input className="form__input" placeholder="What should I do today?" />
-              <button className="form__button">Add task</button>
-                </form>
-            </div>
-        </section>
-        <section className="section">
-          <div className="section__container">
-            <h2 className="section__header">Task List</h2>
-            <div className="section__buttonsContainer">
-            </div>
+            <button className="form__button">Add task</button>
+          </form>
+        </div>
+      </section>
+      <section className="section">
+        <div className="section__container">
+          <h2 className="section__header">Task List</h2>
+          <div className="section__buttonsContainer">
           </div>
-          <div className="section__body">
-            <ul className="list"></ul>
-          </div>
-        </section>
+        </div>
+        <div className="section__body">
+          <ul className="list"></ul>
+        </div>
+      </section>
     </main>
   );
 }
