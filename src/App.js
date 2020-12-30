@@ -1,3 +1,5 @@
+import React from "react";
+import Form from "./Form";
 
 const tasks = [
   { id: 1, content: "test1", done: true },
@@ -15,10 +17,7 @@ function App() {
       <section className="section">
         <h2 className="section__header">Add new task</h2>
         <div className="section__body">
-          <form className="form">
-            <input className="form__input" placeholder="What should I do today?" />
-            <button className="form__button">Add task</button>
-          </form>
+          <Form />
         </div>
       </section>
       <section className="section">
