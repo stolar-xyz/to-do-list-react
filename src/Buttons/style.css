@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+    .buttons__button {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.buttons__button {
+    margin: 15px;
+    align-self: center;
+    cursor: pointer;
+    border: none;
+    color: teal;
+    background-color: inherit;
+    transition: transform 0.3s;
+}
+
+.buttons__button:hover {
+    transform: scale(1.1);
+}
+
+.buttons__button:disabled {
+    color: #acacac;
+    cursor: default;
+}
