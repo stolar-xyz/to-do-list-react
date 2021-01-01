@@ -15,16 +15,16 @@
     color: white;
     background-color: hsl(180, 100%, 25%);
     padding: 10px 15px;
-    transition: background-color 0.5s, transform 0.5s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .form__button:hover {
     background-color: hsl(180, 100%, 27.5%);
-    transform: scale(1.1);
 }
 
 .form__button:active {
     background-color: hsl(180, 100%, 30%);
+    transform: scale(1.05);
 }
 
 @media (max-width: 767px) {

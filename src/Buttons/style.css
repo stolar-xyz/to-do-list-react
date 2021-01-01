@@ -1,5 +1,5 @@
 @media (max-width: 767px) {
-    .buttons__button {
+    .buttons {
         display: flex;
         flex-direction: column;
     }
@@ -12,11 +12,11 @@
     border: none;
     color: teal;
     background-color: inherit;
-    transition: transform 0.3s;
+    transition: transform 0.2s;
 }
 
-.buttons__button:hover {
-    transform: scale(1.1);
+.buttons__button:active {
+    transform: scale(1.05);
 }
 
 .buttons__button:disabled {
