@@ -12,11 +12,11 @@
     border: none;
     color: teal;
     background-color: inherit;
-    transition: transform 0.2s;
+    transition: color 0.2s;
 }
 
-.buttons__button:active {
-    transform: scale(1.05);
+.buttons__button:hover {
+    color: hsl(180, 100%, 35%);
 }
 
 .buttons__button:disabled {
