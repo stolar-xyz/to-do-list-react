@@ -1,14 +1,14 @@
 import React from "react";
 import "./style.css";
 
-const Section = (props) => (
+const Section = ({ title, extraHeaderContent, body }) => (
     <section className="section">
         <div className="section__container">
-            <h2 className="section__header">{props.title}</h2>
-            {props.extraHeaderContent}
+            <h2 className="section__header">{title}</h2>
+            {extraHeaderContent}
         </div>
         <div className="section__body">
-            {props.body}
+            {body}
         </div>
     </section>
 );
