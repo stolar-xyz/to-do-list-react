@@ -21,9 +21,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - BEM
 ### Libraries
  - React.js
-  - fontAwesome
+ - gh-pages
+ - fontAwesome
  - normalize.css
-
 <hr>
 
 ## Available Scripts
