@@ -1,7 +1,7 @@
 # To-do List React
 
 ## Live
-(url)
+https://stolar-code.github.io/to-do-list-react/
 ## Description
 This is a simple task list created for educational purposes.<br>
 For me in this project the main role was getting used to **React & create-react-app** environment. 
