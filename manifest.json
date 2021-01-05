@@ -6,11 +6,6 @@
       "src": "iconToDoList.png",
       "sizes": "162x162",
       "type": "image/png"
-    },
-    {
-      "src": "imageToDoList.png",
-      "type": "image/png",
-      "sizes": "1200x1200"
     }
   ],
   "start_url": ".",
