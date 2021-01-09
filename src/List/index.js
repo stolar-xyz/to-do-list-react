@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { FaCheck, FaTimes } from "react-icons/fa";
 
-const List = ({ tasks, hideDone }) => (
+const List = ({ tasks, hideDone, removeTask }) => (
     <ul className="list">
         {tasks.map(task => (
             <li
@@ -12,7 +12,7 @@ const List = ({ tasks, hideDone }) => (
                 <span className={`list__content ${task.done ? "list__content--special" : ""}`}>
                     {task.content}
                 </span>
-                <button className="list__button list__button--remove"><FaTimes title="cross mark" /></button>
+                <button className="list__button list__button--remove" onClick={() => removeTask(task.id)}><FaTimes title="cross mark" /></button>
             </li>
         ))}
     </ul>
