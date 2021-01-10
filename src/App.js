@@ -13,6 +13,17 @@ function App() {
     { id: 2, content: "test2", done: false },
   ]);
 
+  const addNewTask = (content) => {
+    setTasks(tasks => [
+      ...tasks,
+      {
+        content,
+        done: false,
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
+      }
+    ])
+  };
+
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone);
   };
@@ -47,7 +58,7 @@ function App() {
       <Header title="To-do List" />
       <Section
         title="Add new task"
-        body={<Form />}
+        body={<Form addNewTask={addNewTask} />}
       />
       <Section
         title="Task List"
