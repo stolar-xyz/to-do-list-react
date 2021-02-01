@@ -14,13 +14,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - React
  - JSX
  - create-react-app
-###  Methotology
- - BEM
 ### Libraries
  - React.js
  - gh-pages
  - fontAwesome
  - normalize.css
+ - styled-components
 
 ## How to use it?
  1. Type your task in input then click enter or on "Add task".
