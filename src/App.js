@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Form from "./Form";
 import List from "./List";
-import Buttons from "./Buttons";
+import Buttons from "./Container/Buttons";
 import Section from "./Section";
 import Header from "./Header";
 import Container from "./Container"
