@@ -12,7 +12,7 @@ export const Item = styled.li`
     grid-gap: 20px;
     padding: 20px;
     align-items: center;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};
 
     ${({ hidden }) => hidden && css`
         display: none;
@@ -25,15 +25,15 @@ export const Button = styled.button`
     line-height: 50%;
     padding: 5px;
     background-color: inherit;
-    color: teal;
+    color: ${({ theme }) => theme.colors.main};
     transition: color 0.3s;
 
     ${({ toggleDone }) => toggleDone && css`
         color: #fefefe;
-        background-color: teal;
+        background-color: ${({ theme }) => theme.colors.main};
 
         &:hover {
-            background-color: hsl(180, 100%, 28%);
+            background-color: ${({ theme }) => theme.colors.hoverColor};
         }
     `}
 
@@ -53,7 +53,7 @@ export const Content = styled.span`
         text-decoration: line-through;
     `}
 
-    @media (max-width: 767px) {
+    @media (max-width: ${({theme}) => theme.breakpoints.mobile}px) {
         justify-self: center;
     }
 `;
