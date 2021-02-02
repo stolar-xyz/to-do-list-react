@@ -26,23 +26,19 @@ export const Button = styled.button`
     padding: 5px;
     background-color: inherit;
     color: ${({ theme }) => theme.colors.main};
-    transition: color 0.3s;
+    transition: color 0.2s, filter 0.2s;
 
     ${({ toggleDone }) => toggleDone && css`
         color: #fefefe;
         background-color: ${({ theme }) => theme.colors.main};
 
         &:hover {
-            background-color: ${({ theme }) => theme.colors.hoverColor};
+        filter: opacity(0.9)
         }
-    `}
+    `};
 
     ${({ remove }) => remove && css`
         color: crimson;
-
-        &:hover {
-            color: red;
-        }
     `}
 `;
 
@@ -53,7 +49,7 @@ export const Content = styled.span`
         text-decoration: line-through;
     `}
 
-    @media (max-width: ${({theme}) => theme.breakpoints.mobile}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
         justify-self: center;
     }
 `;
