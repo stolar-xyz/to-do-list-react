@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useTasks } from "./customHooks/useTasks";
+import { useTasks } from "./useTasks";
 import Form from "./components/Form";
 import List from "./components/List";
 import Buttons from "./components/Buttons";
