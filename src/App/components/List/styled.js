@@ -33,7 +33,7 @@ export const Button = styled.button`
         background-color: ${({ theme }) => theme.colors.main};
 
         &:hover {
-        filter: opacity(0.9)
+        filter: brightness(1.1);
         }
     `};
 
