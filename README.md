@@ -21,6 +21,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - fontAwesome
  - normalize.css
  - styled-components
+ - react-redux
  - redux-toolkit
 
 ## How to use it?
