@@ -21,6 +21,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - fontAwesome
  - normalize.css
  - styled-components
+ - redux-toolkit
 
 ## How to use it?
  1. Type your task in input then click enter or on "Add task".
