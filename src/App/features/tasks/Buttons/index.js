@@ -4,10 +4,8 @@ import { Wrapper, Button } from "./styled";
 import { selectTasks, toggleHideDone } from "../../tasks/tasksSlice";
 
 const Buttons = ({ markAllAsDone, deleteAll }) => {
-
     const { tasks, hideDone } = useSelector(selectTasks);
     const dispatch = useDispatch();
-
 
     return (
         tasks.length > 0 && (
