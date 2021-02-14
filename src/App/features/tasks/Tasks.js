@@ -31,13 +31,12 @@ function Tasks() {
       />
       <Section
         title="Task List"
-        body={<TaskList tasks={tasks}
+        body={<TaskList
           removeTask={removeTask}
           toggleTaskDone={toggleTaskDone}
         />}
 
         extraHeaderContent={<Buttons
-          tasks={tasks}
           markAllAsDone={markAllAsDone}
           deleteAll={deleteAll}
         />}
