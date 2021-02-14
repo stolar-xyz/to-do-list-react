@@ -2,7 +2,7 @@ import React from "react";
 import { FaCheck, FaTimes } from "react-icons/fa";
 import { Content, Item, Button, Tasks } from "./styled";
 
-const List = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
+const TaskList = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
     <Tasks>
         {tasks.map(task => (
             <Item
@@ -28,4 +28,4 @@ const List = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
     </Tasks>
 );
 
-export default List;
+export default TaskList;
