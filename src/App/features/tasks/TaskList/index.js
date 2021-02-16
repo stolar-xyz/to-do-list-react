@@ -1,11 +1,12 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { FaCheck, FaTimes } from "react-icons/fa";
 import { Content, Item, Button, Tasks } from "./styled";
-import { selectTasks } from "../tasksSlice";
+import { selectTasks, toggleTaskDone } from "../tasksSlice";
 
-const TaskList = ({ removeTask, toggleTaskDone }) => {
+const TaskList = ({ removeTask }) => {
     const { tasks, hideDone } = useSelector(selectTasks);
+    const dispatch = useDispatch();
 
     return (
         <Tasks>
@@ -16,7 +17,7 @@ const TaskList = ({ removeTask, toggleTaskDone }) => {
                 >
                     <Button
                         toggleDone={task.done}
-                        onClick={() => toggleTaskDone(task.id)}>
+                        onClick={() => dispatch(toggleTaskDone(task.id))}>
                         <FaCheck title="check mark" />
                     </Button>
                     <Content
