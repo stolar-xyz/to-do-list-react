@@ -3,7 +3,14 @@
 Live: https://stolar-code.github.io/to-do-list-react/
 ## Description
 This is a simple task list created for educational purposes.<br>
-For me in this project the main role was getting used to **React & create-react-app** environment. 
+
+In this task list you can:
+- add tasks and delete them
+- hide done tasks
+- mark all tasks as done
+- delete done tasks with one click
+
+For me, the main role in this project was to practice using the **React & create-react-app** environment and the libraries used there. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
