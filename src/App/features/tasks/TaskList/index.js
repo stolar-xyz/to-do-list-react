@@ -2,9 +2,9 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { FaCheck, FaTimes } from "react-icons/fa";
 import { Content, Item, Button, Tasks } from "./styled";
-import { selectTasks, toggleTaskDone } from "../tasksSlice";
+import { selectTasks, toggleTaskDone, removeTask } from "../tasksSlice";
 
-const TaskList = ({ removeTask }) => {
+const TaskList = () => {
     const { tasks, hideDone } = useSelector(selectTasks);
     const dispatch = useDispatch();
 
@@ -26,7 +26,7 @@ const TaskList = ({ removeTask }) => {
                     </Content>
                     <Button
                         remove
-                        onClick={() => removeTask(task.id)}>
+                        onClick={() => dispatch(removeTask(task.id))}>
                         <FaTimes title="cross mark" />
                     </Button>
                 </Item>
