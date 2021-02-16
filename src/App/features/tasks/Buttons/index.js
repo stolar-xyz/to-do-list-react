@@ -1,9 +1,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Wrapper, Button } from "./styled";
-import { selectTasks, toggleHideDone } from "../../tasks/tasksSlice";
+import { selectTasks, toggleHideDone, deleteAllTasks } from "../../tasks/tasksSlice";
 
-const Buttons = ({ markAllAsDone, deleteAll }) => {
+const Buttons = ({ markAllAsDone }) => {
     const { tasks, hideDone } = useSelector(selectTasks);
     const dispatch = useDispatch();
 
@@ -22,7 +22,7 @@ const Buttons = ({ markAllAsDone, deleteAll }) => {
                     Mark all as done
                     </Button>
                 <Button
-                    onClick={deleteAll}
+                    onClick={() => dispatch(deleteAllTasks())}
                 >
                     Delete all
                 </Button>
