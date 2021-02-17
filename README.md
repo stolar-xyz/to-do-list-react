@@ -8,7 +8,7 @@ In this task list you can:
 - add tasks and delete them
 - hide done tasks
 - mark all tasks as done
-- delete done tasks with one click
+- delete tasks with one click
 
 For me, the main role in this project was to practice using the **React & create-react-app** environment and the libraries used there. 
 
