@@ -20,12 +20,13 @@ const Buttons = () => {
 
     return (
         <Wrapper>
-            <Button
-                onClick={() => dispatch(fetchExampleTasks())}
-            >
-                Download sample tasks
-            </Button>
-            {!areTasksEmpty && (
+            {areTasksEmpty ?
+                <Button
+                    onClick={() => dispatch(fetchExampleTasks())}
+                >
+                    Download sample tasks
+                </Button>
+                :
                 <>
                     <Button
                         onClick={() => dispatch(toggleHideDone())}
@@ -44,7 +45,7 @@ const Buttons = () => {
                         Delete all
                 </Button>
                 </>
-            )}
+            }
         </Wrapper>
     );
 };
