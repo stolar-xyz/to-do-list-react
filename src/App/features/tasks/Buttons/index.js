@@ -1,7 +1,15 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Wrapper, Button } from "./styled";
-import { toggleHideDone, deleteAllTasks, markAllAsDone, selectAreTasksEmpty, selectHideDone, selectIsEveryTaskDone } from "../../tasks/tasksSlice";
+import {
+    toggleHideDone,
+    deleteAllTasks,
+    markAllAsDone,
+    selectAreTasksEmpty,
+    selectHideDone,
+    selectIsEveryTaskDone,
+    fetchExampleTasks
+} from "../../tasks/tasksSlice";
 
 const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);
@@ -11,26 +19,33 @@ const Buttons = () => {
     const dispatch = useDispatch();
 
     return (
-        !areTasksEmpty && (
-            <Wrapper>
-                <Button
-                    onClick={() => dispatch(toggleHideDone())}
-                >
-                    {hideDone ? "Show done tasks" : "Hide done tasks"}
+        <Wrapper>
+            <Button
+                onClick={() => dispatch(fetchExampleTasks())}
+            >
+                Download sample tasks
+            </Button>
+            {!areTasksEmpty && (
+                <>
+                    <Button
+                        onClick={() => dispatch(toggleHideDone())}
+                    >
+                        {hideDone ? "Show done tasks" : "Hide done tasks"}
+                    </Button>
+                    <Button
+                        onClick={() => dispatch(markAllAsDone())}
+                        disabled={isEveryTaskDone}
+                    >
+                        Mark all as done
+                    </Button>
+                    <Button
+                        onClick={() => dispatch(deleteAllTasks())}
+                    >
+                        Delete all
                 </Button>
-                <Button
-                    onClick={() => dispatch(markAllAsDone())}
-                    disabled={isEveryTaskDone}
-                >
-                    Mark all as done
-                    </Button> 
-                <Button
-                    onClick={() => dispatch(deleteAllTasks())}
-                >
-                    Delete all
-                </Button>
-            </Wrapper>
-        )
+                </>
+            )}
+        </Wrapper>
     );
 };
 
