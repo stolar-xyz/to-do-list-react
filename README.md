@@ -29,6 +29,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - styled-components
  - react-redux
  - redux-toolkit
+ - redux-saga
 
 ## How to use it?
  1. Type your task in input then click enter or on "Add task".
