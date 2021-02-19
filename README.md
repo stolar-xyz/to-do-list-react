@@ -11,6 +11,8 @@ In this task list you can:
 - delete tasks with one click
 - download sample tasks
 
+tasks will be saved in your localStorage, so don't worry, they won't disappear!
+
 For me, the main role in this project was to practice using the **React & create-react-app** environment and the libraries used there. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
