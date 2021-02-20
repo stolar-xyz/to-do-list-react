@@ -49,7 +49,7 @@ export const Content = styled.span`
         text-decoration: line-through;
     `}
 
-    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         justify-self: center;
     }
 `;
