@@ -30,6 +30,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - fontAwesome
  - normalize.css
  - styled-components
+ - react-router
  - react-redux
  - redux-toolkit
  - redux-saga
