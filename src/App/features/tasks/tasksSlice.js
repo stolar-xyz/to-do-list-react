@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getTasksFromLocalStorage, getHideDoneFromLocalStorage } from "./tasksLocalStorage";
+import { getTasksFromLocalStorage, getHideDoneFromLocalStorage } from "./tasksStateLocalStorage";
 
 const tasksSlice = createSlice({
     name: 'tasks',
