@@ -2,7 +2,8 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { FaCheck, FaTimes } from "react-icons/fa";
 import { Content, Item, Button, Tasks } from "./styled";
-import { selectTasks, toggleTaskDone, removeTask, selectHideDone } from "../tasksSlice";
+import { selectTasks, toggleTaskDone, removeTask, selectHideDone } from "../../tasksSlice";
+import { Link } from "react-router-dom";
 
 const TaskList = () => {
     const tasks = useSelector(selectTasks);
@@ -22,9 +23,8 @@ const TaskList = () => {
                         onClick={() => dispatch(toggleTaskDone(task.id))}>
                         <FaCheck title="check mark" />
                     </Button>
-                    <Content
-                        done={task.done}>
-                        {task.content}
+                    <Content done={task.done}>
+                        <Link to={`/tasks/${task.id}`}>{task.content}</Link>
                     </Content>
                     <Button
                         remove
