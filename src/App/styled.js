@@ -6,7 +6,27 @@ const activeClassName = "active";
 export const StyledNavLink = styled(NavLink).attrs(() => ({
     activeClassName,
 }))`
+    color: white;
+    text-decoration: none;
+
     &.${activeClassName} {
-        color: red;
+        font-weight: bold;
     }
+`;
+
+export const Navigation = styled.nav`
+    background-color: ${({ theme }) => theme.colors.main};
+`;
+
+export const List = styled.ul`
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+`;
+
+export const ListItem = styled.li`
+    padding: 20px;
+    font-size: 18px;
 `;

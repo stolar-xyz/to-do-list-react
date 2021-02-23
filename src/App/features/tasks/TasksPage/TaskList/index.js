@@ -1,9 +1,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { FaCheck, FaTimes } from "react-icons/fa";
-import { Content, Item, Button, Tasks } from "./styled";
+import { Content, Item, Button, Tasks, StyledLink } from "./styled";
 import { toggleTaskDone, removeTask, selectHideDone, selectTasksByQuery } from "../../tasksSlice";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import searchQueryParamName from "../searchQueryParamName";
 
 const TaskList = () => {
@@ -28,7 +28,7 @@ const TaskList = () => {
                         <FaCheck title="check mark" />
                     </Button>
                     <Content done={task.done}>
-                        <Link to={`/tasks/${task.id}`}>{task.content}</Link>
+                        <StyledLink to={`/tasks/${task.id}`}>{task.content}</StyledLink>
                     </Content>
                     <Button
                         remove

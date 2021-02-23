@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const Tasks = styled.ul`
@@ -52,5 +53,10 @@ export const Content = styled.span`
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         justify-self: center;
     }
+`;
+
+export const StyledLink = styled(Link)`
+    color: ${({ theme }) => theme.colors.main};
+    text-decoration: none;
 `;
 
