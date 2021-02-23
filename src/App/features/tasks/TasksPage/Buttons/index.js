@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Wrapper, Button } from "./styled";
+import { Wrapper, Button, Loading } from "./styled";
 import {
     toggleHideDone,
     deleteAllTasks,
@@ -8,24 +8,34 @@ import {
     selectAreTasksEmpty,
     selectHideDone,
     selectIsEveryTaskDone,
-    fetchExampleTasks
+    fetchExampleTasks,
+    selectLoading
 } from "../../tasksSlice";
 
 const Buttons = () => {
     const areTasksEmpty = useSelector(selectAreTasksEmpty);
     const hideDone = useSelector(selectHideDone);
     const isEveryTaskDone = useSelector(selectIsEveryTaskDone);
+    const stateOfLoading = useSelector(selectLoading)
 
     const dispatch = useDispatch();
 
     return (
         <Wrapper>
             {areTasksEmpty ?
-                <Button
-                    onClick={() => dispatch(fetchExampleTasks())}
-                >
-                    Download sample tasks
-                </Button>
+                <>
+                    {stateOfLoading ?
+                        <Loading>
+                            Loading...
+                        </Loading>
+                        :
+                        <Button
+                            onClick={() => dispatch(fetchExampleTasks())}
+                        >
+                            Download sample tasks
+                        </Button>
+                    }
+                </>
                 :
                 <>
                     <Button

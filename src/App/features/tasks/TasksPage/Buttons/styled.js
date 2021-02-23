@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 
 export const Button = styled.button`
     margin: 15px;
-    align-self: center;
+    padding: 0;
     cursor: pointer;
     border: none;
     color: ${({theme}) => theme.colors.main};
@@ -20,4 +20,10 @@ export const Button = styled.button`
         color: #acacac;
         cursor: default;
     `}
+`;
+
+export const Loading = styled.span`
+    color: #acacac;
+    margin: 15px;
+    align-self: center;
 `;
