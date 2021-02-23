@@ -43,7 +43,11 @@ export const Button = styled.button`
     `}
 `;
 
-export const Content = styled.span`
+export const Content = styled.div`
+    text-align: center;
+`;
+
+export const ItemContent = styled.span`
     overflow-wrap: anywhere;
 
     ${({ done }) => done && css`
@@ -59,4 +63,3 @@ export const StyledLink = styled(Link)`
     color: ${({ theme }) => theme.colors.main};
     text-decoration: none;
 `;
-
