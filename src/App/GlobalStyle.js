@@ -3,6 +3,8 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
     html {
         box-sizing: border-box;
+        min-height: 100%;
+        background: ${({ theme }) => theme.colors.mainBackground};
     }
 
     *,
@@ -13,6 +15,5 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: 'Montserrat', sans-serif;
-        background: ${({ theme }) => theme.colors.backgroundOutside};
     }
 `;

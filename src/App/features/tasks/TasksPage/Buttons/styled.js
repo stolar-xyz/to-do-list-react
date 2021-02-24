@@ -13,7 +13,7 @@ export const Button = styled.button`
     align-self: center;
     cursor: pointer;
     border: none;
-    color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }) => theme.colors.button};
     background-color: inherit;
     transition: color 0.2s, filter 0.2s;
 
@@ -24,13 +24,18 @@ export const Button = styled.button`
     }
 
     ${({ disabled }) => disabled && css`
-        color: #acacac;
+        color: ${({ theme }) => theme.colors.disabled};
+        cursor: default;
+    `}
+
+    ${({ loading }) => loading && css`
+        color: ${({ theme }) => theme.colors.disabled};
         cursor: default;
     `}
 `;
 
 export const Loading = styled.span`
-    color: #acacac;
+    color: ${({ theme }) => theme.colors.disabled};
     margin: 15px;
     align-self: center;
 `;

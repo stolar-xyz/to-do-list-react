@@ -1,9 +1,9 @@
 import React from "react";
 import { toAuthor, toTasks } from "../routes";
-import { List, ListItem, StyledNavigation, StyledNavLink } from "./styled";
+import { List, ListItem, StyledNavLink } from "./styled";
 
 const Navigation = () => (
-    <StyledNavigation>
+    <nav>
         <List>
             <ListItem>
                 <StyledNavLink exact to={toTasks()}>Tasks</StyledNavLink>
@@ -12,7 +12,7 @@ const Navigation = () => (
                 <StyledNavLink to={toAuthor()}>Author</StyledNavLink>
             </ListItem>
         </List>
-    </StyledNavigation>
+    </nav>
 );
 
 export default Navigation;

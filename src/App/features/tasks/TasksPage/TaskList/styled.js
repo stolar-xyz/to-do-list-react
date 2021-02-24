@@ -13,7 +13,7 @@ export const Item = styled.li`
     grid-gap: 20px;
     padding: 20px;
     align-items: center;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.borderColor};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.border};
 
     ${({ hidden }) => hidden && css`
         display: none;
@@ -26,12 +26,12 @@ export const Button = styled.button`
     line-height: 50%;
     padding: 5px;
     background-color: inherit;
-    color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }) => theme.colors.button};
     transition: color 0.2s, filter 0.2s;
 
     ${({ toggleDone }) => toggleDone && css`
         color: #fefefe;
-        background-color: ${({ theme }) => theme.colors.main};
+        background-color: ${({ theme }) => theme.colors.button};
 
         &:hover {
         filter: brightness(1.1);
@@ -60,7 +60,7 @@ export const ItemContent = styled.span`
 `;
 
 export const StyledLink = styled(Link)`
-    color: ${({ theme }) => theme.colors.main};
+    color: ${({ theme }) => theme.colors.links.task};
     text-decoration: none;
 
     @media (pointer: fine) {

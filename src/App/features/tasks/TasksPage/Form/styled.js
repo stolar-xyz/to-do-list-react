@@ -14,7 +14,7 @@ export const Button = styled.button`
     cursor: pointer;
     border: none;
     color: white;
-    background-color: ${({ theme }) => theme.colors.main};;
+    background-color: ${({ theme }) => theme.colors.button};
     padding: 10px 15px;
     transition: filter 0.3s, transform 0.3s;
 

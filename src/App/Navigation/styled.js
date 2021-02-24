@@ -6,7 +6,7 @@ const activeClassName = "active";
 export const StyledNavLink = styled(NavLink).attrs(() => ({
     activeClassName,
 }))`
-    color: white;
+    color: ${({ theme }) => theme.colors.links.navigation};
     text-decoration: none;
 
     &.${activeClassName} {
@@ -18,10 +18,6 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
             border-bottom: 1px solid; 
         }
 }
-`;
-
-export const StyledNavigation = styled.nav`
-    background-color: ${({ theme }) => theme.colors.main};
 `;
 
 export const List = styled.ul`
