@@ -24,6 +24,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  - React
  - JSX
  - create-react-app
+ - custom hooks
+ - localStorage
+ - fetch
  
 ### Libraries
  - gh-pages
