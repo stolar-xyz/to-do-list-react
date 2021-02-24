@@ -10,11 +10,16 @@ export const Wrapper = styled.div`
 export const Button = styled.button`
     margin: 15px;
     padding: 0;
+    align-self: center;
     cursor: pointer;
     border: none;
-    color: ${({theme}) => theme.colors.main};
+    color: ${({ theme }) => theme.colors.main};
     background-color: inherit;
-    transition: color 0.2s;
+    transition: color 0.2s, filter 0.2s;
+
+    &:hover {
+        filter: brightness(1.2);
+    }
 
     ${({ disabled }) => disabled && css`
         color: #acacac;

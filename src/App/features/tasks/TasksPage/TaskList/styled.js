@@ -62,4 +62,8 @@ export const ItemContent = styled.span`
 export const StyledLink = styled(Link)`
     color: ${({ theme }) => theme.colors.main};
     text-decoration: none;
+
+    &:hover {
+        border-bottom: 1px solid;
+    }
 `;
