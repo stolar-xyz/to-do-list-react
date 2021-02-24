@@ -17,8 +17,10 @@ export const Button = styled.button`
     background-color: inherit;
     transition: color 0.2s, filter 0.2s;
 
-    &:hover {
-        filter: brightness(1.2);
+    @media (pointer: fine) {
+        &:hover { 
+            filter: brightness(1.2); 
+        }
     }
 
     ${({ disabled }) => disabled && css`

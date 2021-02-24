@@ -13,9 +13,11 @@ export const StyledNavLink = styled(NavLink).attrs(() => ({
         font-weight: bold;
     }
 
-    &:hover {
-        border-bottom: 1px solid;
-    }
+    @media (pointer: fine) {
+        &:hover { 
+            border-bottom: 1px solid; 
+        }
+}
 `;
 
 export const StyledNavigation = styled.nav`

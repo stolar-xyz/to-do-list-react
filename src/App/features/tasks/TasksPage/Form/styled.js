@@ -18,12 +18,13 @@ export const Button = styled.button`
     padding: 10px 15px;
     transition: filter 0.3s, transform 0.3s;
 
-    &:hover {
+    @media (pointer: fine) {
+        &:hover {
         filter: brightness(1.1);
+        }
     }
 
     &:active {
-        filter: brightness(1.2);
         transform: scale(1.05);
     }
 `;

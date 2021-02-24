@@ -63,7 +63,9 @@ export const StyledLink = styled(Link)`
     color: ${({ theme }) => theme.colors.main};
     text-decoration: none;
 
-    &:hover {
-        border-bottom: 1px solid;
+    @media (pointer: fine) {
+        &:hover { 
+            border-bottom: 1px solid; 
+        }
     }
 `;
