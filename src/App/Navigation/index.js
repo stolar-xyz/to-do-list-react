@@ -6,7 +6,7 @@ const Navigation = () => (
     <StyledNavigation>
         <List>
             <ListItem>
-                <StyledNavLink to={toTasks()}>Tasks</StyledNavLink>
+                <StyledNavLink exact to={toTasks()}>Tasks</StyledNavLink>
             </ListItem>
             <ListItem>
                 <StyledNavLink to={toAuthor()}>Author</StyledNavLink>
