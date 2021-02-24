@@ -17,7 +17,7 @@ export const Container = styled.div`
 `;
 
 export const SubHeaderTitle = styled.h2`
-    color: ${({ theme }) => theme.colors.Subheader};
+    color: ${({ theme }) => theme.colors.subHeader};
     margin: 0;
     padding: 25px;
 `;
