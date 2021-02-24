@@ -4,31 +4,32 @@ import AuthorPage from "./features/author/AuthorPage";
 import TasksPage from "./features/tasks/TasksPage/index";
 import TaskPage from "./features/tasks/TaskPage/index";
 import { StyledNavLink, List, Navigation, ListItem } from "./styled";
+import { toAuthor, toTask, toTasks } from "./routes";
 
 const App = () => (
     <HashRouter>
         <Navigation>
             <List>
                 <ListItem>
-                    <StyledNavLink exact to="/tasks">Tasks</StyledNavLink>
+                    <StyledNavLink to={toTasks()}>Tasks</StyledNavLink>
                 </ListItem>
                 <ListItem>
-                    <StyledNavLink to="/author">Author</StyledNavLink>
+                    <StyledNavLink to={toAuthor()}>Author</StyledNavLink>
                 </ListItem>
             </List>
         </Navigation>
         <Switch>
-            <Route path="/tasks/:id">
+            <Route path={toTask()}>
                 <TaskPage />
             </Route>
-            <Route path="/tasks">
+            <Route path={toTasks()}>
                 <TasksPage />
             </Route>
-            <Route path="/author">
+            <Route path={toAuthor()}>
                 <AuthorPage />
             </Route>
-            <Route path="/">
-                <Redirect to="/tasks" />
+            <Route>
+                <Redirect to={toTasks()} />
             </Route>
         </Switch>
     </HashRouter>
