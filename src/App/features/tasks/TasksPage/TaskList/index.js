@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { FaCheck, FaTimes } from "react-icons/fa";
-import { ItemContent, Item, Button, Tasks, StyledLink, Content } from "./styled";
+import { ItemContent, Item, ItemButton, Tasks, StyledLink, Content } from "./styled";
 import { toggleTaskDone, removeTask, selectHideDone, selectTasksByQuery, selectAreTasksEmpty } from "../../tasksSlice";
 import searchQueryParamName from "../searchQueryParamName";
 import { toTask } from "../../../../routes";
@@ -29,19 +29,19 @@ const TaskList = () => {
                             key={task.id}
                             hidden={task.done && hideDone}
                         >
-                            <Button
+                            <ItemButton
                                 toggleDone={task.done}
                                 onClick={() => dispatch(toggleTaskDone(task.id))}>
                                 <FaCheck title="check mark" />
-                            </Button>
+                            </ItemButton>
                             <ItemContent done={task.done}>
                                 <StyledLink to={toTask({ id: task.id })}>{task.content}</StyledLink>
                             </ItemContent>
-                            <Button
+                            <ItemButton
                                 remove
                                 onClick={() => dispatch(removeTask(task.id))}>
                                 <FaTimes title="cross mark" />
-                            </Button>
+                            </ItemButton>
                         </Item>
                     ))}
                 </Tasks>

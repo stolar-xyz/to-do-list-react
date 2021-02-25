@@ -20,7 +20,7 @@ export const Item = styled.li`
     `}
 `;
 
-export const Button = styled.button`
+export const ItemButton = styled.button`
     cursor: pointer;
     border: none;
     line-height: 50%;
