@@ -1,9 +1,9 @@
 import React from "react";
 import { StyledHeader } from "./styled";
 
-const Header = ({ title }) => (
+const Header = ({ title, extraHeaderContent }) => (
     <StyledHeader>
-        {title}
+        {title}{extraHeaderContent}
     </StyledHeader>
 );
 

@@ -14,7 +14,7 @@ export const Button = styled.button`
     cursor: pointer;
     border: none;
     color: ${({ theme }) => theme.colors.button};
-    background-color: inherit;
+    background-color: transparent;
     transition: color 0.2s, filter 0.2s;
 
     @media (pointer: fine) {

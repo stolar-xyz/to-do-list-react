@@ -36,7 +36,7 @@ const tasksSlice = createSlice({
             state.tasks = tasks;
         },
         setLoadingExampleTasks: (state, { payload }) => {
-            state.loading = payload;
+            state.loading = payload; 
         }
     },
 });

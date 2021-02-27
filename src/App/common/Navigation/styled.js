@@ -26,6 +26,7 @@ export const List = styled.ul`
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background: ${({ theme }) => theme.colors.navigationBackground};
 `;
 
 export const ListItem = styled.li`

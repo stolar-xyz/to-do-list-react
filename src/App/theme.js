@@ -2,11 +2,16 @@ export const theme = {
     colors: {
         header: "hsl(0, 0%, 96%)",
         subHeader: "hsl(180, 100%, 25%)",
+        text: "hsl(0, 0%, 0%)",
         button: "hsl(180, 100%, 25%)",
+        themeToggler: "hsl(0, 0%, 96%)",
+        input: "hsl(0, 0%, 100%)",
+        placeholder: "hsl(230, 24%, 56%)",
         disabled: "hsl(0, 0%, 67%)",
         border: "hsl(270, 6%, 93%)",
         mainBackground: "linear-gradient(0deg, rgba(246,246,246,1) 40%, rgba(0,128,128,1) 100%)",
         sectionBackground: "hsl(0, 0%, 100%)",
+        navigationBackground: "transparent",
 
         links: {
             navigation: "hsl(0, 0%, 100%)",
@@ -16,5 +21,29 @@ export const theme = {
 
     breakpoints: {
         mobileMax: 767,
+    },
+};
+
+export const darkTheme = {
+    ...theme,
+
+    colors: {
+        header: "hsl(0, 0%, 90%)",
+        subHeader: "hsl(0, 0%, 90%)",
+        text: "hsl(0, 0%, 90%)",
+        button: "hsl(260, 56%, 52%)",
+        themeToggler: "hsl(260, 56%, 52%)",
+        input: "hsl(216, 28%, 7%)",
+        placeholder: "hsl(0, 0%, 67%)",
+        disabled: "hsl(0, 0%, 67%)",
+        border: "hsl(0, 0%, 7%)",
+        mainBackground: "hsl(216, 28%, 7%)",
+        sectionBackground: "hsl(215, 21%, 11%)",
+        navigationBackground: "hsl(215, 21%, 11%)",
+
+        links: {
+            navigation: "hsl(0, 0%, 90%)",
+            task: "hsl(0, 0%, 90%)",
+        },
     },
 };

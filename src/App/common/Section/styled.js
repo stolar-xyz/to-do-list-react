@@ -23,6 +23,7 @@ export const SubHeaderTitle = styled.h2`
 `;
 
 export const Wrapper = styled.div`
+    color: ${({ theme }) => theme.colors.text};
     padding: 25px;
     border-top: 3px solid ${({ theme }) => theme.colors.border};
 `;

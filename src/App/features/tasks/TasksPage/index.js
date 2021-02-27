@@ -6,10 +6,14 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import Search from "./Search";
+import ThemeToggler from "../../../common/ThemeToggler";
 
 const TasksPage = () => (
     <Container>
-        <Header title="To-do List" />
+        <Header
+            title="To-do List"
+            extraHeaderContent={<ThemeToggler />}
+        />
         <Section
             title="Add new task"
             body={<Form />}
