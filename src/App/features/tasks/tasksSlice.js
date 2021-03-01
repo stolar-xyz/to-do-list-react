@@ -1,11 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getTasksFromLocalStorage, getHideDoneFromLocalStorage } from "./tasksStateLocalStorage";
+import { getDataFromLocalStorage } from "../saveDataInLocalStorage";
 
 const tasksSlice = createSlice({
     name: 'tasks',
     initialState: {
-        tasks: getTasksFromLocalStorage(),
-        hideDone: getHideDoneFromLocalStorage(),
+        tasks: getDataFromLocalStorage("tasks") || [],
+        hideDone: getDataFromLocalStorage("hideDone") || false,
         loading: false,
     },
     reducers: {
@@ -36,7 +36,7 @@ const tasksSlice = createSlice({
             state.tasks = tasks;
         },
         setLoadingExampleTasks: (state, { payload }) => {
-            state.loading = payload; 
+            state.loading = payload;
         }
     },
 });
