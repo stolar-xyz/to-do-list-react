@@ -1,4 +1,4 @@
-export const theme = {
+export const lightTheme = {
     colors: {
         header: "hsl(0, 0%, 96%)",
         subHeader: "hsl(180, 100%, 25%)",
@@ -25,7 +25,7 @@ export const theme = {
 };
 
 export const darkTheme = {
-    ...theme,
+    ...lightTheme,
 
     colors: {
         header: "hsl(0, 0%, 90%)",
