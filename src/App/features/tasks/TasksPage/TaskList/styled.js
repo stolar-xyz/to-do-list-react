@@ -25,7 +25,7 @@ export const ItemButton = styled.button`
     border: none;
     line-height: 50%;
     padding: 5px;
-    background-color: inherit;
+    background-color: transparent;
     color: ${({ theme }) => theme.colors.button};
     transition: color 0.2s, filter 0.2s;
 
