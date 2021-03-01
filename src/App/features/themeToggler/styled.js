@@ -8,7 +8,7 @@ export const TogglerThemeButton = styled.button`
     padding: 0px;
     margin-right: 25px;
     font-size: 28px;
-    background-color: inherit;
+    background-color: transparent;
     transition: filter 0.3s;
 
     &:hover {

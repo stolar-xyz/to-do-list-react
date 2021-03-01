@@ -6,7 +6,7 @@ import Section from "../../../common/Section";
 import Header from "../../../common/Header";
 import Container from "../../../common/Container";
 import Search from "./Search";
-import ThemeToggler from "../../../common/ThemeToggler";
+import ThemeToggler from "../../themeToggler/ThemeToggler";
 
 const TasksPage = () => (
     <Container>

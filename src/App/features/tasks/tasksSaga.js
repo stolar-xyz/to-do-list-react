@@ -1,9 +1,7 @@
 import { takeLatest, call, put, takeEvery, select, delay } from "redux-saga/effects";
 import { getExampleTasks } from "./getExampleTasks";
 import { saveTasksStateInLocalStorage } from "./tasksStateLocalStorage";
-import { saveDarkThemeInLocalStorage } from "../../common/ThemeToggler/darkThemeStateLocalStorage";
 import { fetchExampleTasks, selectTasksState, setTasks, setLoadingExampleTasks } from "./tasksSlice";
-import { selectDarkTheme, toggleDarkTheme } from "../../common/ThemeToggler/themeSlice";
 
 function* fetchExampleTasksHandler() {
     try {
@@ -23,13 +21,7 @@ function* saveTasksStateInLocalStorageHandler() {
     yield call(saveTasksStateInLocalStorage, tasks, hideDone);
 };
 
-function* saveDarkThemeStateInLocalStorageHandler() {
-    const darkTheme = yield select(selectDarkTheme);
-    yield call(saveDarkThemeInLocalStorage, darkTheme);
-};
-
 export function* tasksSaga() {
     yield takeLatest(fetchExampleTasks.type, fetchExampleTasksHandler);
     yield takeEvery("*", saveTasksStateInLocalStorageHandler);
-    yield takeLatest(toggleDarkTheme.type, saveDarkThemeStateInLocalStorageHandler);
 };

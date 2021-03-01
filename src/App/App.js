@@ -6,16 +6,16 @@ import TaskPage from "./features/tasks/TaskPage/index";
 import Navigation from "./common/Navigation";
 import { toAuthor, toTask, toTasks } from "./routes";
 import { ThemeProvider } from "styled-components";
-import { theme, darkTheme } from "./theme";
+import { lightTheme, darkTheme } from "./theme";
 import { useSelector } from "react-redux";
-import { selectDarkTheme } from "./common/ThemeToggler/themeSlice";
+import { selectDarkTheme } from "./features/themeToggler/themeSlice";
 import { GlobalStyle } from "./GlobalStyle";
 
 const App = () => {
     const isThemeDark = useSelector(selectDarkTheme)
 
     return (
-        <ThemeProvider theme={isThemeDark ? darkTheme : theme}>
+        <ThemeProvider theme={isThemeDark ? darkTheme : lightTheme}>
             <GlobalStyle />
             <HashRouter>
                 <Navigation />
