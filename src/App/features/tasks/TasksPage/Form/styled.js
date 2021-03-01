@@ -13,7 +13,7 @@ export const StyledForm = styled.form`
 export const Button = styled.button`
     cursor: pointer;
     border: none;
-    color: white;
+    color: ${({ theme }) => theme.colors.formButtonText};
     background-color: ${({ theme }) => theme.colors.button};
     padding: 10px 15px;
     transition: filter 0.3s, transform 0.3s;
