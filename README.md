@@ -31,8 +31,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Libraries
  - gh-pages
  - fontAwesome
- - normalize.css
  - styled-components
+ - styled-normalize
  - react-router
  - react-redux
  - redux-toolkit
