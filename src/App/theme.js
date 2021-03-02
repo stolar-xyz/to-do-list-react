@@ -4,7 +4,7 @@ export const lightTheme = {
         subHeader: "hsl(180, 100%, 25%)",
         text: "hsl(0, 0%, 0%)",
         button: "hsl(180, 100%, 25%)",
-        formButtonText: "hsl(0, 0%, 96%)",
+        formButtonText: "hsl(0, 0%, 100%)",
         themeToggler: "hsl(0, 0%, 96%)",
         input: "hsl(0, 0%, 100%)",
         placeholder: "hsl(230, 24%, 56%)",
