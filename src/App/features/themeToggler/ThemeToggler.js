@@ -1,4 +1,3 @@
-import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MoonIcon, SunIcon, TogglerThemeButton } from "./styled";
 import { selectDarkTheme, toggleDarkTheme } from "./themeSlice";

@@ -1,4 +1,4 @@
-import React from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom';
 import App from './App/App';
 import reportWebVitals from './reportWebVitals';
@@ -7,12 +7,12 @@ import store from "./App/store";
 import { Normalize } from "styled-normalize";
 
 ReactDOM.render(
-    <React.StrictMode>
+    <StrictMode>
         <Provider store={store}>
             <Normalize />
             <App />
         </Provider>
-    </React.StrictMode>,
+    </StrictMode>,
     document.getElementById('root')
 );
 
