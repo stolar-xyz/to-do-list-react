@@ -5,5 +5,9 @@ export const StyledHeader = styled.h1`
     font-size: 42px;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 36px;
+    }
 `;
