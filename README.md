@@ -1,10 +1,13 @@
 # To-do List React
 
-Live: https://stolar-code.github.io/to-do-list-react/
+[Demo](https://stolar-code.github.io/to-do-list-react/)
+
 ## Description
+
 This is a simple task list created for educational purposes.<br>
 
 In this task list you can:
+
 - add tasks and delete them
 - hide done tasks
 - mark all tasks as done
@@ -13,39 +16,42 @@ In this task list you can:
 
 tasks will be saved in your localStorage, so don't worry, they won't disappear!
 
-For me, the main role in this project was to practice using the **React & create-react-app** environment and the libraries used there. 
+For me, the main role in this project was to practice using the **React & create-react-app** environment and the libraries used there.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-##  Used technologies
- - HTML
- - CSS
- - JavaScript
- - React
- - JSX
- - create-react-app
- - custom hooks
- - localStorage
- - fetch
- 
+## Used technologies
+
+- HTML
+- CSS
+- JavaScript
+- React
+- JSX
+- create-react-app
+- custom hooks
+- localStorage
+- fetch
+
 ### Libraries
- - gh-pages
- - fontAwesome
- - styled-components
- - styled-normalize
- - react-router
- - react-redux
- - redux-toolkit
- - redux-saga
+
+- gh-pages
+- fontAwesome
+- styled-components
+- styled-normalize
+- react-router
+- react-redux
+- redux-toolkit
+- redux-saga
 
 ## How to use it?
- 1. Type your task in input then click enter or on "Add task".
- 2. After you done your task click on check icon to cross this task out.
- 3. You can hide done tasks by clicking on "Hide done tasks".
- 4. If you want to delete task, click on cross icon or click on "Delete all" which will delete your all tasks even hidden ones. 
- (If the list of tasks is empty, the section buttons will be hidden and will appear if you add a new task)
- 5. You can cross out all your tasks by clicking on "Mark all as done", if you want to undo cross out the task click on green box on left side of task.
- 
+
+1.  Type your task in input then click enter or on "Add task".
+2.  After you done your task click on check icon to cross this task out.
+3.  You can hide done tasks by clicking on "Hide done tasks".
+4.  If you want to delete task, click on cross icon or click on "Delete all" which will delete your all tasks even hidden ones.
+    (If the list of tasks is empty, the section buttons will be hidden and will appear if you add a new task)
+5.  You can cross out all your tasks by clicking on "Mark all as done", if you want to undo cross out the task click on green box on left side of task.
+
 [![toDoList.gif](https://i.postimg.cc/1Xd49dkg/toDoList.gif)](https://postimg.cc/9wGcbLFV)
 
 ## Available Scripts
