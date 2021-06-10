@@ -55,7 +55,7 @@ export const ItemContent = styled.span`
     `}
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        justify-self: center;
+        text-align: center;
     }
 `;
 
