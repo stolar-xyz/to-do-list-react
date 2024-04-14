@@ -1,6 +1,6 @@
 # To-do List React
 
-[Demo](https://stolar-code.github.io/to-do-list-react/)
+[Demo](https://stolar-xyz.github.io/to-do-list-react/)
 
 ## Description
 
